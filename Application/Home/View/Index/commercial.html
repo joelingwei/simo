@@ -1,0 +1,21 @@
+<include file="public:head" />
+<body>
+	<include file="public:header" />
+	<div id="main">
+		<div class="fjx"></div>
+		<div class="nr">
+	    	<ul class="nrlist">
+	    	<volist name="com" id="v">
+	    		<li>
+	    			<a href="{:U('Index/cnry',array('id'=>$v['id']))}">
+	    			<div class="pic"><img src="{$v.pic}" /></div>
+	    			<div class="title">{$v.name}</div>
+	    			</a>
+	    		</li>
+	    	</volist>
+			</ul>
+		</div>
+	</div>
+	<include file="public:footer" />
+</body>
+</html>

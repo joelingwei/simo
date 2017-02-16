@@ -1,0 +1,19 @@
+<include file="public:head" />
+<body>	<include file="public:header" />
+	<div id="main">
+		<div class="fjx"></div>
+		<div class="go_story"><a href="javascript:history.go(-1);"><span>←</span>BACK</div></a>
+		<div class="nr">
+			<if condition="$signed eq 0">
+				<div class="nrt">
+					<img src="../../{$images.img}" />
+				</div>
+			<else />
+				<video autoplay="autoplay" preload="auto" controls="controls" src="../../{$images.img}"  width="100%"></video>
+			</if>
+			<div class="nrbt">{$images.name}</div>
+		</div>
+	</div>
+	<include file="public:footer" />
+</body>
+</html>

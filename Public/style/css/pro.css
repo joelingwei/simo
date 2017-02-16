@@ -1,0 +1,203 @@
+/*首页css样式*/
+
+*{ margin:0; padding:0;}ul{ list-style:none;overflow:hidden;}
+
+img{border:none;}
+
+a{ text-decoration:none;}
+
+body{background-color:#E9E9E9;}
+
+
+
+/*首页*/
+
+#shouye{width:100%;margin-top:15%;/* margin-left:20%; */overflow: hidden;}
+
+.sy1{width:8%;margin:0% auto;}
+
+.sy2{width:13%;margin:1.5% auto 0%;text-align:center;}
+
+.sy1 img{width:100%;}
+
+.sy2 img{width:100%;}
+
+.sy2 p{line-height: 150%;}
+
+.sy2 .sy2_y{font-family:"Copperplate Gothic Light";color:#5E5F5F;font-weight:600;font-size: 18px;letter-spacing: 2px;margin-left: 12px;}
+
+.sy2 .sy2_z{font-family:"华文中宋";color:#5E5F5F;    font-size: 12px;margin-left: 10px;}
+
+#bq{width:60%;margin:1% auto;color:#5E5F5F;text-align:center;font-size:0.5rem;}
+
+/*二级引导页*/
+
+#gjc{width:45%;margin:20% auto;overflow: hidden;}
+
+.gjc_l{float:left;width:49.5%;text-align:center;border-right:1px dashed #999999;}
+
+.gjc_r{float:right;width:49.5%;text-align:center;}
+
+.gjc_z{font-size:60px;font-family: "宋体";}
+
+.gjc_y{font-family: Helvetica, Arial, sans-serif/* "Copperplate Gothic Light" */;font-size:13px;margin-top:10%;}
+
+.gjc_l a,.gjc_r a{color:#666666;}
+
+.gjc_l a:hover,.gjc_r a:hover{color:#DA2D33;}
+
+
+
+/*头部*/
+
+#header{width:50%;min-width: 960px;margin:4% auto 0%;overflow: hidden;}
+
+.logo{width:25%;float:left;}
+
+.logo img{width: 350px;height: 105px;}
+
+.nav{width:50%;float:right;margin-top:1%;margin-right: -2rem;}
+
+.nav .navlist{list-style:none;width:100%;}
+
+.nav .navlist li{float:left;width:30%;text-align: center;font-family: "华文细黑";font-size: 0.8rem;padding: 3% 0%;}
+
+.nav .navlist li a{text-transform: uppercase;text-decoration: none;color: #676767;font-family:Helvetica, Arial, sans-serif;}
+
+.nav .navlist li:hover{background-color:#9D3033;}
+
+.nav .navlist li a:hover{color:#ffffff;}
+
+.nav .navlist .bg{background-color:rgb(218,44,51);}
+
+.nav .navlist .bg a{color:#ffffff;}
+
+/*脚步*/
+
+#footer{width:50%;min-width: 960px;margin:2% auto 0%;border-top: 1px solid #999999;text-align:center;font-family: "华文细黑";color:#B9ABA3;padding:2% 0;overflow: hidden;}
+
+/*广告列表页*/
+
+#main{width:50%;margin:2% auto 0%;overflow: hidden;min-width:960px;}
+
+.fjx{width:100%;height:1px;background-color:#999999;}
+
+.nr{width:100%;margin-top: 4%;overflow: hidden;}
+
+.nr .nrlist{width:100%;list-style:none;}
+
+.nr .nrlist .nrnone{margin-left:0%;position: relative;}
+
+.nr .nrlist .nrz{position:relative;}
+
+.nr .nrlist li{width:100%;position:relative;/* height: 270px */;margin-top: 20px;overflow: hidden;  border-bottom-right-radius: 25px;}
+
+.nr .nrlist li .pic{width:100%;}
+
+.nr .nrlist li .title{
+
+	position: absolute;
+
+    bottom: 0;
+
+    right: 0;
+
+    text-align: center;
+
+    background-color: rgba(0,0,0,0.6);
+
+    color: #999999;
+
+    font-family: 'Oswald', sans-serif;
+
+    border-bottom-left-radius: 0px;
+
+    border-bottom-right-radius: 25px;
+
+    border-bottom-style: solid;
+
+    border-bottom-width: 0px;
+
+    border-image-outset: 0 0 0 0;
+
+    border-image-repeat: stretch stretch;
+
+    border-image-slice: 100% 100% 100% 100%;
+
+    border-image-source: none;
+
+    border-image-width: 1 1 1 1;
+
+    border-top-left-radius: 35px;
+
+    border-top-right-radius: 0px;
+
+    border-top-style: solid;
+
+    border-top-width: 0px;
+
+	padding: 5px 35px;
+	font-size: 13px;
+	}
+
+.nr .nrlist li .zhezhao{background-color:rgba(255, 255, 255, 0.5);display:none;position: absolute;top: 0px;height: 100%;overflow: hidden;width: 100%;}
+
+.nr .nrlist li:hover .zhezhao{display:block;}
+
+.nr .nrlist li a{color:#999999;}
+
+.nr .nrlist li img{width:100%;}
+
+/*电影列表页*/
+
+
+
+/*关于我们*/
+
+.about{color:#999999;font-family:Georgia, "Times New Roman", Times, serif;font-size:1.7rem;}
+
+.us{margin-top:5%;margin-bottom:5%;}
+
+.us p{font-family: "华文细黑";color:#666666;font-size:1rem;line-height:160%;padding-bottom:1%;}
+
+/*友情链接*/
+
+.clientlist{width:100%;list-style:none;margin-bottom: 10%;overflow:hidden;}
+
+.clientlist li{float:left;width:19.9%;border-right:1px dashed #DDDDDD;border-bottom:1px dashed #DDDDDD;}
+
+.clientlist li img{width:100%;}
+
+.clientlist .none{border-right:medium none;}
+
+/*联系我们*/
+
+.map{width:99%;border:1px solid #CCCCCC;border-radius: 10px;padding-bottom: 6%;overflow: hidden;}
+
+.map1{width:100%;}
+
+.map1 img{width:100%;}
+
+.map2{width:100%;margin-top: 5%;}
+
+.map2 p{font-family: "华文细黑";color: #999;}
+
+.map2_left{float:left;margin-left: 8%;width: 40%;min-width: 400px;}
+
+.map2_right{float:left;margin-left: 0%;width: 40%;min-width: 400px;}
+
+
+
+/*内容页*/
+
+.go_story{font-size:1.2rem;margin-top: 5%;margin-left: 2%;}
+
+.go_story a{color: #ccc;}
+
+.go_story span{font-size: 17px;font-weight: bold;}
+
+.nrt{width:100%;}
+
+.nrt img{width:100%;}
+
+.nrbt{width:100%;text-align:center;font-family: "华文细黑";color:#5E5F5F;font-size:1rem;margin-top: 2%;}

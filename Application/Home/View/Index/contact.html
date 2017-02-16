@@ -1,0 +1,27 @@
+<include file="public:head" />
+<body>
+	<include file="public:header" />
+	<div id="main">
+		<div class="fjx"></div>
+		<div class="nr">
+			<div class="about">CONTACT US</div>
+			<div class="us">
+				<div class="map">
+					<div class="map1"><img src="{$con.imgurl}" /></div>
+					<div class="map2">
+						<div class="map2_left">
+							<p>Mail: {$con.mail}</p>
+	            			<p>Tel: {$con.tel} &nbsp; Fax: {$con.fax}</p>						
+						</div>
+						<div class="map2_right">
+							<p>Zip Code: {$con.zip_code}</p>
+	            			<p style="position:relative;"><span style="letter-spacing:1.3px;">Address</span>: <span style="display:block;position:absolute;top:0;left:80px;">{$con.address}</span></p>						
+						</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<include file="public:footer" />
+</body>
+</html>

@@ -1,0 +1,58 @@
+/*首页css样式*/
+*{ margin:0; padding:0;}ul{ list-style:none;overflow:hidden;}
+a{ text-decoration:none;}
+body{background-color:#E9E9E9;}
+
+.tcdl{
+	position: fixed;
+  	top: 5%;
+  	right: 5%;
+	font-family:"宋体";
+	color:#DB2C32;
+	border:1px solid #DB2C32;
+	padding:5px 10px;
+	font-weight:600;
+}
+/*头部*/
+#header{width:70%;margin:2% auto 0%;overflow: hidden;}
+.logo{width:25%;float:left;}
+.logo img{width:100%;}
+.nav{width:50%;float:right;margin-top:1%;}
+.nav .navlist{list-style:none;width:100%;}
+.nav .navlist li{float:left;width:25%;text-align: center;font-family: "华文细黑";font-size: 1rem;padding: 3% 0%;}
+.nav .navlist li a{text-transform: uppercase;text-decoration: none;color: #676767;}
+.nav .navlist li:hover{background-color:#9D3033;}
+.nav .navlist li a:hover{color:#ffffff;}
+.nav .navlist .bg{background-color:rgb(218,44,51);}
+.nav .navlist .bg a{color:#ffffff;}
+/*脚步*/
+#footer{width:70%;margin:2% auto 0%;border-top: 1px solid #999999;text-align:center;font-family: "华文细黑";color:#B9ABA3;padding-top:3%;overflow: hidden;}
+/*关于我们*/
+#main{width:70%;margin:2% auto 0%;overflow: hidden;}
+.fjx{width:100%;height:1px;background-color:#999999;}
+.nr{width:100%;margin-top: 4%;overflow: hidden;}
+.about{color:#999999;font-family:Georgia, "Times New Roman", Times, serif;font-size:1.7rem;}
+.us{width:100%;margin: 2% auto;overflow:hidden;}
+.save{float: right;margin-right: 50px;padding: 10px;padding-bottom: 8px;padding-top: 8px;border-radius: 8px;background-color:#D82D33;font-family:"宋体";color:#ffffff;cursor:pointer;}
+
+/*联系我们*/
+.lianxi{width:90%;margin:2% auto;}
+.lianxi p{line-height:200%;font-family:"微软雅黑";}
+.lianxi p input{width:200px;heigh:50px;line-height:20px;}
+.save1{float: left;margin-left: 50px;padding: 10px;padding-bottom: 8px;padding-top: 8px;border-radius: 8px;background-color:#D82D33;font-family:"宋体";color:#ffffff;cursor:pointer;}
+/*商业相关*/
+.add{float:left;margin-left:50px;padding:10px;padding-top:8px;padding-bottom:8px;margin-bottom: 2%;border-radius:8px;background-color:#EAD7D8;font-family:"宋体";color:#5A7AF1;cursor:pointer;}
+.imglist{width:100%;margin:0% auto;float:left;}
+.imglist1{width:100%;}
+.imglist11{width:100%;height: 150px;line-height: 150px;background-color:#999999;}
+.imglist1101{width:50%;}
+.imglist1101 img{width:100%;}
+.imglist1102{width:40%;text-align:center;}
+.imglist1103{width:10%;text-align:center;}
+/*add页面*/
+.addimage{width:50%;text-align:center;float:left;min-height:300px;line-height:300px;}
+.addmovie{width:50%;text-align:center;float:left;min-height:300px;line-height:300px;}
+.xzz{padding:20%;color:#ffffff;font-family:"宋体";font-size:2rem;}
+.save2{float: left;margin-left: 30px;padding: 10px;padding-bottom: 8px;padding-top: 8px;border-radius: 8px;background-color:#D82D33;font-family:"宋体";color:#ffffff;cursor:pointer;}
+.save3{float: left;margin-left: 50px;padding: 10px;padding-bottom: 8px;padding-top: 8px;border-radius: 8px;background-color:#999999;font-family:"宋体";color:#ffffff;cursor:pointer;}
+/*影视相关*/

@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html"; charset="utf-8" />
+		<title>思陌广告后台管理系统</title>
+		<link rel="stylesheet" href="__PUBLIC__/style/css/syspro.css" type="text/css" />
+		<!-- flavr CSS -->
+		<link rel="stylesheet" href="__PUBLIC__/style/css/animate.css" type="text/css" />
+		<link rel="stylesheet" href="__PUBLIC__/style/css/flavr.css" type="text/css" />
+		<!--END flavr CSS -->
+		<script type="text/javascript" src="__PUBLIC__/style/js/jquery.min.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/style/js/flavr.min.js"></script>
+	</head>
+<body>
+	<div id="header">
+		<div class="logo"><img src="__PUBLIC__/style/images/simo_logo_header.png" /></div>
+		<div class="nav">
+			<ul class="navlist">
+				<li><a href="{:U('Admin/index')}" title="自在思陌">自在思陌</a></li>
+				<li class="bg"><a href="{:U('Admin/callus')}" title="往来思陌">往来思陌</a></li>
+				<li><a href="{:U('Admin/images')}" title="商业相关">商业相关</a></li>
+				<li><a href="{:U('Admin/movies')}" title="影视相关">影视相关</a></li>
+				<!-- <li style="width:21%;"><a href="{:U('Admin/link')}" title="走进远山">友情链接</a></li> -->
+			</ul>
+		</div>
+		<a href="{:U('Index/unlogin')}"><div class="tcdl">登&nbsp;出</div></a>
+	</div>
+	<div id="main">
+		<div class="fjx"></div>
+		<div class="nr">
+			<div class="about">联系我们</div>
+			<form action="{:U('Admin/savelianxi')}" enctype="multipart/form-data" method="post" id="form1">
+			<div class="us">				
+				 <div class="lianxi">
+				 	<p>地理位置图（建议图片尺寸为950*360，大小不要超过8MB）：<input type="file" name="imgurl" /></p>
+				 	<p>联系电话：<input name="tel" type="text" value="{$con.tel}" /></p>
+				 	<p>传真：<input name="fax" type="text" value="{$con.fax}" /></p>
+				 	<p>邮箱：<input name="mail" type="text" value="{$con.mail}" /></p>
+				 	<p>地址：<input name="address" type="text" value="{$con.address}" /></p>
+				 	<p>邮政编码：<input name="zip_code" type="text" value="{$con.zip_code}" /></p>
+				 </div>				 
+			</div>
+			<div class="save1" onclick="document.getElementById('form1').submit()">保存</div>
+			</form>
+		</div>
+	</div>
+	</div>
+	<div id="footer">
+		Copyright © 2016 simo. All rights reserved.
+	</div>
+</body>
+</html>

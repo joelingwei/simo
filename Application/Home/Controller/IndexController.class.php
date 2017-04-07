@@ -4,12 +4,27 @@ use Think\Controller;
 Load('extend');
 class IndexController extends Controller {
     public function index(){
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
+        $this->display();
+    }
+    public function rindex(){
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
         $this->display();
     }
     public function commercial(){
     	$com=D('advertisement')->order('create_time desc')->select();
     	$this->assign('com',$com);
-    	
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$ui['c']='bg';
     	$this->assign('ui',$ui);
     	
@@ -28,7 +43,11 @@ class IndexController extends Controller {
 		}else{
 			$this->assign('signed',1);
 		}
-		
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
 		$ui['c']='bg';
 		$this->assign('ui',$ui);
 		
@@ -37,7 +56,11 @@ class IndexController extends Controller {
     }
     public function movie(){
     	$com=D('movie')->order('create_time desc')->select();
-    	
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$ui['m']='bg';
     	$this->assign('ui',$ui);
     	
@@ -57,7 +80,10 @@ class IndexController extends Controller {
     	}else{
     		$this->assign('signed',1);
     	}
-    	
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$ui['m']='bg';
     	$this->assign('ui',$ui);
     	
@@ -66,7 +92,11 @@ class IndexController extends Controller {
     }
     public function about(){
     	$ab=D('about')->find();
-    	
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$ui['a']='bg';
     	$this->assign('ui',$ui);
     	
@@ -76,11 +106,20 @@ class IndexController extends Controller {
     public function client(){
     	$link=D('link')->select();
     	$this->assign('link',$link);
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$this->display();
     }
     public function contact(){
     	$con=D('contact')->find();
-    	
+
+        $link='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+        $st = new \Home\Controller\PublicController();
+        $st ->head($link);
+
     	$ui['co']='bg';
     	$this->assign('ui',$ui);
     	
